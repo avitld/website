@@ -1,90 +1,125 @@
 body {
-    margin: 0;
+    background-color: rgb(10, 5, 10);
+    max-width: 1200px;
+    margin: 0 auto;
     padding: 0;
-    background-color: rgb(8, 8, 8);
-    color: rgb(248, 248, 248);
-    font-family: sans-serif;
-    font-size: 1.1rem;
+    font-family: FiraCode;
+    font-size: 1rem;
 }
 
-header, main {
-    max-width: 1100px;
-    padding: 5px;
-    margin: 10px auto;
-    background-color: rgb(24, 24, 24);
-    border-radius: 4px;
+@font-face {
+    font-family: FiraCode;
+    src: url('/static/FiraCode.ttf');
 }
 
 header {
-    display: flex;
-    align-items: center;
-    align-content: center;
+    max-width: 100%;
+    background-color: rgb(26, 5, 26);
+    padding: 10px;
+    margin: 10px 5px 5px 5px;
     text-align: center;
 }
 
-header p#header-logo {
-    margin: 10px 40px 10px 5px; 
-    font-weight: bolder;
-    color: rgb(255, 77, 255)
-}
-
 header nav {
-    margin: 0 auto;
+    padding: 5px;
 }
 
 header nav a {
     color: white;
+    background: rgb(38, 5, 38);
     font-weight: bold;
     text-decoration: none;
-    margin: 0 8px;
+    margin: 0px 15px 0 15px;
+    padding: 10px;
+    width: 140px;
+    display: inline-block;
 }
 
-header div#nav-right {
-    margin: 0 10px 0 0;
+main {
+    background-color: rgb(26, 5, 26);
+    max-width: 100%;
+    padding: 10px;
+    margin: 15px 5px 5px 5px;
+    color: white;
 }
 
-header div#nav-right img {
+h1, h2 {
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    padding-left: 10px;
+    padding-bottom: 3px;
+}
+
+main img {
+    max-width: 600px;
+    max-height: 600px;
+}
+
+.article-list img {
+    max-height: 300px;
+    max-width: 600px;
+}
+
+span {
+    color: rgb(64, 109, 109);
+}
+
+a {
+    color: lightcoral;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: rgb(223, 91, 91);
+}
+
+footer {
+    max-width: 100%;
+    background-color: rgb(26, 5, 26);
+    padding: 10px;
+    margin: 10px 5px 10px 5px;
+    text-align: center;
+}
+
+footer img {
     max-width: 24px;
     max-height: 24px;
 }
 
-header div#nav-right a {
-    text-decoration: none;
-    margin: 0 2px;
+p {
+    max-width: 700px;
 }
 
-h1 {
-    padding-left: 10px;
-    border-bottom: 2px solid darkslategray;
-    max-width: 600px;
+header nav a:hover {
+    color: rgb(180, 180, 180);
+    background-color: rgb(34, 5, 34);
 }
 
-main p {
-    max-width: 710px;
-}
-
-main a {
-    color: rgb(255, 77, 255);
-    font-weight: bold;
-    text-decoration: none;
+.article-display * {
+    display: inline;
 }
 
 .article-display {
     padding: 5px;
-    background-color: rgb(30, 30, 30);
-    max-width: 400px;
+    background-color: rgba(0, 0, 0, 0.2);
+    max-width: fit-content;
     margin: 10px 0;
     border-radius: 8px;
 }
 
-.article-display *{
-    display: inline;
+.article-display a:hover {
+    text-decoration: none;
 }
 
-.article-display h3 {
-    color: white;
-}
+@media screen and (max-width: 900px) {
+    header nav a {
+        margin: 5px 15px 0 15px;
+    }
 
-.article-display span {
-    color: darkslategray;
+    header nav a:first-of-type {
+        margin: 0px 15px 0 15px;
+    }
 }
