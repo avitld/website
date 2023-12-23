@@ -1,5 +1,6 @@
 body {
     background-color: rgb(10, 5, 10);
+    background: url('/static/img/bg.webp');
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;
@@ -14,7 +15,7 @@ body {
 
 header {
     max-width: 100%;
-    background-color: rgb(26, 5, 26);
+    background-color: rgba(26, 5, 26, 0.8);
     padding: 10px;
     margin: 10px 5px 5px 5px;
     text-align: center;
@@ -26,7 +27,7 @@ header nav {
 
 header nav a {
     color: white;
-    background: rgb(38, 5, 38);
+    background: rgba(38, 5, 38, 0.8);
     font-weight: bold;
     text-decoration: none;
     margin: 0px 15px 0 15px;
@@ -36,7 +37,7 @@ header nav a {
 }
 
 main {
-    background-color: rgb(26, 5, 26);
+    background-color: rgba(26, 5, 26, 0.8);
     max-width: 100%;
     padding: 10px;
     margin: 15px 5px 5px 5px;
@@ -78,7 +79,7 @@ main a:hover {
 
 footer {
     max-width: 100%;
-    background-color: rgb(26, 5, 26);
+    background-color: rgba(26, 5, 26, 0.8);
     padding: 10px;
     margin: 10px 5px 10px 5px;
     text-align: center;
@@ -95,7 +96,7 @@ p {
 
 header nav a:hover {
     color: rgb(180, 180, 180);
-    background-color: rgb(34, 5, 34);
+    background-color: rgba(34, 5, 34, 0.8);
 }
 
 .article-display * {
